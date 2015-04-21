@@ -3,6 +3,11 @@ cmdPattern/.project
 cmdPattern/.settings
 cmdPattern/.springBeans
 cmdPattern/target
+strategyPattern/.classpath
+strategyPattern/.project
+strategyPattern/.settings
+strategyPattern/.springBeans
+strategyPattern/target
 .metadata/
 RemoteSystemsTempFiles/
 Servers/

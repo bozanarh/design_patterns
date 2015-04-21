@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- Weapon  Behaviors -->
+	<bean id="swordBehavior" class="com.bozana.strategyPattern.SwordBehavior"/>
+	<bean id="axeBehavior" class="com.bozana.strategyPattern.AxeBehavior"/>
+	<bean id="bowBehavior" class="com.bozana.strategyPattern.BowBehavior"/>
+
+	<!-- Characters; and behaviors we wire to them -->
+	<bean id="king" class="com.bozana.strategyPattern.King">
+	    <property name="myWeapon" ref="swordBehavior"/>
+	</bean>
+	<bean id="troll" class="com.bozana.strategyPattern.Troll">
+	    <property name="myWeapon" ref="axeBehavior"/>
+	</bean>
+	<bean id="knight" class="com.bozana.strategyPattern.Knight">
+	    <property name="myWeapon" ref="bowBehavior"/>
+	</bean>
+</beans>
