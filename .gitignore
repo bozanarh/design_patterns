@@ -1,0 +1,10 @@
+cmdPattern/.classpath
+cmdPattern/.project
+cmdPattern/.settings
+cmdPattern/.springBeans
+cmdPattern/target
+.metadata/
+RemoteSystemsTempFiles/
+Servers/
+
+

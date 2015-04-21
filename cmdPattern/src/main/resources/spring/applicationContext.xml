@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!--  Third party objects -->
+	<bean id="hotTub" class="com.bozana.cmdPattern.thirdParty.HotTub"/>
+	<bean id="musicPlayer" class="com.bozana.cmdPattern.thirdParty.MusicPlayer"/>
+	<bean id="roomLight" class="com.bozana.cmdPattern.thirdParty.RoomLight"/>
+	
+	<!--  My command objects - encapsulate 3rd party objects -->
+	<bean id="hotTubOnCommand" class="com.bozana.cmdPattern.HotTubOnCommand">
+		<constructor-arg name="hotTub" ref="hotTub"></constructor-arg>
+	</bean>
+	
+	<bean id="musicPlayerOnCommand" class="com.bozana.cmdPattern.MusicPlayerOnCommand">
+		<constructor-arg name="musicPlayer" ref="musicPlayer"></constructor-arg>
+	</bean>
+	
+	<bean id="roomLightOnCommand" class="com.bozana.cmdPattern.RoomLightOnCommand">
+		<constructor-arg name="roomLight" ref="roomLight"></constructor-arg>
+	</bean>
+	
+	<!-- my macro command; does multiple things -->
+	<bean id="whenIComeHomeCommand" class="com.bozana.cmdPattern.MyMacroWhenIComeHomeCommand">
+		<constructor-arg name="hotTub" ref="hotTub"></constructor-arg>
+		<constructor-arg name="musicPlayer" ref="musicPlayer"></constructor-arg>
+		<constructor-arg name="roomLight" ref="roomLight"></constructor-arg>
+	</bean>
+
+	<bean id="remoteController" class="com.bozana.cmdPattern.RemoteController">
+	</bean>
+</beans>
