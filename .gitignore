@@ -8,6 +8,11 @@ strategyPattern/.project
 strategyPattern/.settings
 strategyPattern/.springBeans
 strategyPattern/target
+statePattern/.classpath
+statePattern/.project
+statePattern/.settings
+statePattern/.springBeans
+statePattern/target
 .metadata/
 RemoteSystemsTempFiles/
 Servers/

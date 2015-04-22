@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xmlns:util="http://www.springframework.org/schema/util"
+   xsi:schemaLocation="
+     http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
+     http://www.springframework.org/schema/util  http://www.springframework.org/schema/util/spring-util-3.1.xsd">
+
+	<bean id="stateOne" class="com.bozana.statePattern.StateOne">
+		<property name="context" ref="stateContext"></property>
+	</bean>
+	<bean id="stateTwo" class="com.bozana.statePattern.StateTwo">
+		<property name="context" ref="stateContext"></property>
+	</bean>
+	<bean id="stateThree" class="com.bozana.statePattern.StateThree">
+		<property name="context" ref="stateContext"></property>
+	</bean>
+
+	<bean id="stateContext" class="com.bozana.statePattern.StateContext">
+		<property name="availableStates" ref="availableStates"/>
+	</bean>
+
+	<util:map id="availableStates" key-type="com.bozana.statePattern.StateConstants" value-type="com.bozana.statePattern.State">
+		<entry key="#{T(com.bozana.statePattern.StateConstants).STATE1}" value-ref="stateOne" />
+		<entry key="#{T(com.bozana.statePattern.StateConstants).STATE2}" value-ref="stateTwo" />
+		<entry key="#{T(com.bozana.statePattern.StateConstants).STATE3}" value-ref="stateThree" />
+	</util:map>
+
+</beans>
+
