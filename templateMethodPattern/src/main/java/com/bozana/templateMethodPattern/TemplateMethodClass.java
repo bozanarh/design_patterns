@@ -1,6 +1,6 @@
 package com.bozana.templateMethodPattern;
 
-public abstract class TemplateClass {
+public abstract class TemplateMethodClass {
 
 	abstract public void  primitiveOperation1(); //subclass will implement
 	abstract public void primitiveOperation2(); //subclass will implement

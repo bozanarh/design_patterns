@@ -1,6 +1,6 @@
 package com.bozana.templateMethodPattern;
 
-public class ConcreteClass2 extends TemplateClass {
+public class ConcreteClass2 extends TemplateMethodClass {
 
 	@Override
 	public void primitiveOperation1() {
