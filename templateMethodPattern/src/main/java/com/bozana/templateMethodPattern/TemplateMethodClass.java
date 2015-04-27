@@ -6,8 +6,13 @@ public abstract class TemplateMethodClass {
 	abstract public void primitiveOperation2(); //subclass will implement
 	
 	//subclass cannot change
-	final public void concreateOperation(){
+	final private void concreateOperation(){
 		System.out.println(this.getClass().getName() + ": concreateOperation() - base class; subclass cannot change it");
+	}
+	
+	final public void templateMethod(){
+		System.out.println(this.getClass().getName() + ": templateMethod() - base class");
+		concreateOperation();
 		primitiveOperation1();
 		hook();
 		primitiveOperation2();

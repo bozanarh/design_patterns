@@ -11,9 +11,9 @@ public final class Main {
 		ConcreteClass1 obj1 = (ConcreteClass1) context.getBean("obj1");
 		ConcreteClass2 obj2 = (ConcreteClass2) context.getBean("obj2");
 		System.out.println("----");
-		obj1.concreateOperation();
+		obj1.templateMethod();
 		System.out.println("");
-		obj2.concreateOperation();
+		obj2.templateMethod();
 	}
 
 }
