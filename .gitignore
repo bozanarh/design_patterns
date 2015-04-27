@@ -13,6 +13,11 @@ statePattern/.project
 statePattern/.settings
 statePattern/.springBeans
 statePattern/target
+singletonPattern/.classpath
+singletonPattern/.project
+singletonPattern/.settings
+singletonPattern/.springBeans
+singletonPattern/target
 .metadata/
 RemoteSystemsTempFiles/
 Servers/
