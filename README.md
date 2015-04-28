@@ -21,9 +21,9 @@ We implement this pattern by extracting things that vary from common code. Then 
 
 ### Singleton Pattern 
 
-**Singleton Pattern ensures that class has only one instance and it provides a global entry point of access to the instance
+**Singleton Pattern** ensures that class has only one instance and it provides a global entry point of access to the instance
 
 ## [ Template Method Pattern - Behavioral Pattern](https://github.com/bozanarh/design_patterns/blob/master/templateMethodPattern)
 
-**Template Method Pattern defines skeleton of an algorithm, but lets subclasses to implement or redefine some steps.
+**Template Method Pattern** defines skeleton of an algorithm, but lets subclasses to implement or redefine some steps.
 
