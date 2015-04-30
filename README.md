@@ -23,11 +23,11 @@ We implement this pattern by extracting things that vary from common code. Then 
 
 **Singleton Pattern** ensures that class has only one instance and it provides a global entry point of access to the instance
 
-## [ Template Method Pattern - Behavioral Pattern](https://github.com/bozanarh/design_patterns/blob/master/templateMethodPattern)
+### [ Template Method Pattern - Behavioral Pattern](https://github.com/bozanarh/design_patterns/blob/master/templateMethodPattern)
 
 **Template Method Pattern** defines skeleton of an algorithm, but lets subclasses to implement or redefine some steps.
 
-## [ Builder Pattern - Creational Pattern ](https://github.com/bozanarh/design_patterns/blob/master/builderPattern)
+### [ Builder Pattern - Creational Pattern ](https://github.com/bozanarh/design_patterns/blob/master/builderPattern)
 
 **Builder Pattern** is used to construct complex objects which would otherwise require too many constructor arguments to be passed, or too many setter methods to be invoked.
 
