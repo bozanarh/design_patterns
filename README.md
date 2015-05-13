@@ -31,3 +31,7 @@ We implement this pattern by extracting things that vary from common code. Then 
 
 **Builder Pattern** is used to construct complex objects which would otherwise require too many constructor arguments to be passed, or too many setter methods to be invoked.
 
+### [ Decorator Pattern - Structural Pattern ](https://github.com/bozanarh/design_patterns/blob/master/decoratorPattern)
+
+**Decorator Pattern** is used to attach additional responsibilities to an object dynamically. It achieves this through Decorator class which mirrors type of components it decorates.
+
