@@ -10,3 +10,7 @@
 
 ## Class diagram
 ![alt tag](https://github.com/bozanarh/design_patterns/blob/master/decoratorPattern/decoratorPatternClass.jpg)
+
+### Example of usage - ordering a cake
+BaseCake class - represents Component and offers methods, e.g. cost() and description(). BaseCakeSponge implements Component. Then as concrete decorators, we can have VanilaCakeSponge, ChocolateCakeSponge, VanilaFudgeFilling, ChocolateFudgeFilling, ChocolateMousseFilling, etc... User can chose which base and filling he wants and each is adding to the price and description.
+
