@@ -35,3 +35,7 @@ We implement this pattern by extracting things that vary from common code. Then 
 
 **Decorator Pattern** is used to attach additional responsibilities to an object dynamically. It achieves this through Decorator class which mirrors type of components it decorates.
 
+### [ Iterator Pattern - Behavioral Pattern ](https://github.com/bozanarh/design_patterns/blob/master/iteratorPattern)
+
+**Iterator Pattern** provides a way to access elements of an aggregate object without exposing underlying structure.
+
