@@ -7,7 +7,7 @@ public class PencakeHouseIterator implements Iterator<MenuItem> {
 	private ArrayList<MenuItem> menuItems;
 	private int position = 0;
 	
-	PencakeHouseIterator(ArrayList items){
+	PencakeHouseIterator(ArrayList<MenuItem> items){
 		this.menuItems = items;
 	}
 	public boolean hasNext() {
