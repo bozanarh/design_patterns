@@ -3,11 +3,11 @@ package iteratorPattern;
 import java.util.ArrayList;
 import java.util.Iterator;
 
-public class PencakeHouseIterator implements Iterator<MenuItem> {
+public class PancakeHouseIterator implements Iterator<MenuItem> {
 	private ArrayList<MenuItem> menuItems;
 	private int position = 0;
 	
-	PencakeHouseIterator(ArrayList<MenuItem> items){
+	PancakeHouseIterator(ArrayList<MenuItem> items){
 		this.menuItems = items;
 	}
 	public boolean hasNext() {
